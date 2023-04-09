@@ -1,0 +1,40 @@
+/* reset all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* to include padding and border in width and height of a container */
+  color: black;
+}
+/* links and buttons reset */
+a {
+    text-decoration: none;
+}
+button {
+    border: none;
+}
+
+.landingpage {
+    height: 100vh;
+    position: relative;
+}
+img {
+ position: absolute;
+ width: 100%;
+ height: 100%;
+ left: 0;
+ top: 0;
+ z-index: -1;
+ opacity: .4;
+}
+
+.landingpage__nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.landingpage__link {
+    color: blue;
+    padding-left: 4px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
