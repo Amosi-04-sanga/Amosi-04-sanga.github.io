@@ -4,37 +4,144 @@
   padding: 0;
   box-sizing: border-box; /* to include padding and border in width and height of a container */
   color: black;
+  font-family: cursive;
+  color: blue;
 }
 /* links and buttons reset */
 a {
-    text-decoration: none;
-}
-button {
-    border: none;
+  text-decoration: none;
+  text-transform: capitalize;
 }
 
 .landingpage {
-    height: 100vh;
-    position: relative;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
 }
-img {
- position: absolute;
- width: 100%;
- height: 100%;
- left: 0;
- top: 0;
- z-index: -1;
- opacity: .4;
+#bgimage {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0.4;
 }
-
+.landingpage__nav,
+.main__left--inner {
+    background-color: rgba(168, 240, 59, .8);
+}
+.landingpage__header {
+  margin: 1rem 0 1rem;
+}
+.landingpage__title {
+  text-align: center;
+  padding-bottom: 1rem;
+}
 .landingpage__nav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: fit-content;
+  padding: 0.4rem;
+  border-radius: 0.5rem;
 }
 .landingpage__link {
-    color: blue;
-    padding-left: 4px;
-    font-size: 1.2rem;
-    text-transform: uppercase;
+  padding-left: 1rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 3rem 1rem;
+}
+.main__left {
+  padding: 0.2rem 0.5rem;
+  flex: 2;
+}
+.main__left--inner {
+    padding: 0 1rem;
+    width: 70%;
+}
+.main__right {
+  flex: 1;
+  height: 60vh;
+}
+#student {
+  width: 100%;
+  height: 100%;
+}
+.main__title {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+
+.main__btn {
+  padding: 0.2rem;
+  margin-bottom: 1.3rem;
+  border: none;
+  background-color: rgba(0, 128, 0, 0.4);
+  border-radius: .2rem;
+}
+.main__btn:hover {
+    transition: .3s all ease-in-out;
+    background-color: rgba(0, 128, 0, .8);
+}
+.main__btn a {
+  color: white;
+}
+.footer__container {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  display: flex;
+  height: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(168, 240, 59, .8);
+  padding: 0.8rem;
+}
+
+.icon {
+    width: 2rem;
+    height: 2rem;
+    padding-left: .6rem;
+    fill: blue;
+}
+@media screen and (max-width: 700px) {
+    .footer__container {
+        width: 90%;
+    }
+
+    .icon {
+        width: 1.6rem;
+        height: 1.6rem;
+    }
+    
+}
+
+@media screen and (max-width: 550px) {
+    .main__right {
+        position: fixed;
+        top: o;
+        left: 0;
+        z-index: -1;
+    }
+
+    .footer__container {
+        width: 100%;
+    }
+
+    .icon {
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+    
 }
