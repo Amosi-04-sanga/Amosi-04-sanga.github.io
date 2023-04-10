@@ -2,5 +2,5 @@
 learning platform website 
 created by html and css only
 
-TO RUN PAGE CLICk
-[click here... ](https://jacksonlearningsite.netlify.app/)
+TO RUN PAGE
+[CLICK HERE... ](https://jacksonlearningsite.netlify.app/)
