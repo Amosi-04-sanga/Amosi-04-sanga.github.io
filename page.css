@@ -3,8 +3,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box; /* to include padding and border in width and height of a container */
-  color: black;
   color: blue;
+  font-family: 'Courier New', Courier, monospace;
 }
 /* links and buttons reset */
 a {
@@ -15,7 +15,7 @@ a {
 .landingpage {
   height: 100vh;
   position: relative;
-  display: grid;
+  overflow: hidden;
 }
 #bgimage {
   position: absolute;
