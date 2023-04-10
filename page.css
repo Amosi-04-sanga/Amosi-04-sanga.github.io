@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box; /* to include padding and border in width and height of a container */
   color: blue;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 /* links and buttons reset */
 a {
@@ -114,7 +114,7 @@ a {
     padding-left: .6rem;
     fill: blue;
 }
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 670px) {
     .footer__container {
         width: 90%;
     }
@@ -123,16 +123,28 @@ a {
         width: 1.6rem;
         height: 1.6rem;
     }
-    
-}
-
-@media screen and (max-width: 550px) {
+    .main__left--inner {
+      width: 90vw;
+      margin: auto;
+    }
     .main__right {
         position: fixed;
         top: o;
         left: 0;
         z-index: -1;
     }
+    
+}
+
+@media screen and (max-width: 550px) {
+  body {
+    font-size: .9rem;
+  }
+
+  .landingpage__link {
+    font-size: .8rem;
+    font-weight: bolder;
+  }
 
     .footer__container {
         width: 100%;
