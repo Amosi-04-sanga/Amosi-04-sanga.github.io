@@ -4,7 +4,6 @@
   padding: 0;
   box-sizing: border-box; /* to include padding and border in width and height of a container */
   color: black;
-  font-family: cursive;
   color: blue;
 }
 /* links and buttons reset */
@@ -16,7 +15,7 @@ a {
 .landingpage {
   height: 100vh;
   position: relative;
-  overflow: hidden;
+  display: grid;
 }
 #bgimage {
   position: absolute;
